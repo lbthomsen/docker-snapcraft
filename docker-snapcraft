@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run --hostname "snapcraft" --env="USERNAME=$USER" --env="USERID=`id -u`" --volume="/home:/home" -ti lbthomsen/docker-snapcraft
