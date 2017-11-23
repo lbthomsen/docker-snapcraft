@@ -2,9 +2,6 @@ FROM ubuntu:latest
 
 MAINTAINER Lars Boegild Thomsen <lth@cow.dk>
 
-#ADD     sources.list /etc/apt/
-#ADD    preferences /etc/apt/
-
 COPY	locale.gen /etc
 
 RUN     export DEBIAN_FRONTEND=noninteractive && \
