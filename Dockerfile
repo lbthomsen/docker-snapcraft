@@ -20,6 +20,7 @@ RUN     update-alternatives --install "/usr/bin/go" "go" "/usr/lib/go-1.9/bin/go
 
 COPY	run.sh /
 COPY	sudoers /etc
+COPY    utf-8.sh /etc/profile.d
 
 RUN	chmod +x ./run.sh
 
