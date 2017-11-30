@@ -14,8 +14,6 @@ export LANG=C.UTF-8
 
 cd work
 
-ls -la /root/.cache
-
 sudo --user=$USERNAME snapcraft "$@"
 
 # vim: ts=4 et nowrap autoindent
