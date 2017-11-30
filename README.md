@@ -8,10 +8,13 @@ Unfortunately getting that to run proper on Debian proved extremly tricky, so I 
 Installation
 ============
 
-`wget https://raw.githubusercontent.com/lbthomsen/docker-snapcraft/master/snapcraft
-chmod +x snapcraft`
+The Docker image is build automatically when this repository is updated.
 
-The Docker image is build automatically when this repository is updated
+Fetch the "snapcraft" script:
+
+`wget https://raw.githubusercontent.com/lbthomsen/docker-snapcraft/master/snapcraft && chmod +x snapcraft`
+
+And move this script somewhere in your path.
 
 Extra packages
 ==============
