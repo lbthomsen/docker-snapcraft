@@ -15,12 +15,15 @@ RUN     export DEBIAN_FRONTEND=noninteractive && \
 
 RUN     update-alternatives --install "/usr/bin/go" "go" "/usr/lib/go-1.9/bin/go" 0 && update-alternatives --set go /usr/lib/go-1.9/bin/go
 
-COPY	run.sh /
 COPY	sudoers /etc
 
-RUN	chmod +x ./run.sh
+COPY	run.sh /
 
-VOLUME  ["/home"]
+RUN	    chmod 777 /root && chmod +x ./run.sh
+
+#RUN     mkdir /root/.cache && chmod 777 /root/.cache
+
+VOLUME  ["/work", "/root/.cache"]
 
 ENTRYPOINT ["./run.sh"]
 
