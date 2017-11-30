@@ -1,6 +1,7 @@
 #
 # Docker image for running snapcraft on systems where snapcraft is not available.
 #
+
 FROM ubuntu:latest
 
 MAINTAINER Lars Boegild Thomsen <lth@cow.dk>
