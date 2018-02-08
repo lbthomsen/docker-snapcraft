@@ -20,6 +20,7 @@ RUN     export DEBIAN_FRONTEND=noninteractive && \
 RUN     update-alternatives --install "/usr/bin/go" "go" "/usr/lib/go-1.9/bin/go" 0 && update-alternatives --set go /usr/lib/go-1.9/bin/go
 
 COPY	sudoers /etc
+COPY    utf-8.sh /etc/profile.d
 
 COPY	run.sh /
 
